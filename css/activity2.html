@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic HTML5 Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        section {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML5 Basic Features</h1>
+
+    <section>
+        <h2>Multimedia</h2>
+        <video width="400" controls>
+            <source src="/html/vidoeo.mp4" type="video/mp4">
+            Video not supported
+        </video>
+    </section>
+
+    <section>
+        <h2>Canvas Drawing</h2>
+        <canvas id="myCanvas" width="300" height="200"></canvas>
+    </section>
+
+    <section>
+        <h2>HTML5 Form</h2>
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Draw a simple shape
+        ctx.fillStyle = 'blue';
+        ctx.fillRect(50, 50, 100, 80);
+    </script>
+</body>
+</html>
