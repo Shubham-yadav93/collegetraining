@@ -1,0 +1,10 @@
+table{
+  border: 4px solid greenyellow;
+}
+
+.one{
+  background-color: wheat;
+  margin: 50px;
+  padding :10px;
+  text-align: center;
+}
