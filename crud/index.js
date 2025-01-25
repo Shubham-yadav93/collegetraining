@@ -10,7 +10,8 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 1234
 mongoClient.connect(process.env.MONGO_URL).then(()=>{
-    console.log("MongoDB atlas connection established successfully")
+    // console.log("MongoDB atlas connection established successfully")
+    console.log("MongoDB compass connection established successfully")
 }).catch((err)=>{
     console.log(err);
 })
